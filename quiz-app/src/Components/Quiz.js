@@ -38,7 +38,7 @@ function Quiz() {
           {Questions[currentQuestion].optionD}
         </button>
       </div>
-      {currentQuestion == Questions.length - 1 ? (
+      {currentQuestion === Questions.length - 1 ? (
         <button onClick={finishQuiz}>Finish Quiz</button>
       ) : (
         <button onClick={nextQuestion}>Next Question</button>
